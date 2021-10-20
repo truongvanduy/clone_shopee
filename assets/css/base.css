@@ -56,6 +56,7 @@ html {
     bottom: 0;
     left: 0;
     display: none;
+    z-index: 2;
 }
 
 .modal__overlay {
@@ -66,7 +67,7 @@ html {
 }
 
 .modal__body {
-    z-index: 1;
+    z-index: 3;
     position: relative;
     margin: auto;
     border-radius: 6px;
