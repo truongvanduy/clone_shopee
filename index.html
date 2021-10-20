@@ -89,8 +89,17 @@
                         <div class="header-with-search__search-bar">
                             <div class="search-bar__main">
                                 <input type="search" name="" id="" placeholder="Freeship trọn đời">
+                                <ul class="search-history">
+                                    <li class="search-history__item"><a href="" class="history__item-link">cầy bảy
+                                            món</a></li>
+                                    <li class="search-history__item"><a href="" class="history__item-link">bạn người yêu
+                                            sale 90%</a></li>
+                                    <li class="search-history__item"><a href="" class="history__item-link">dép tổ ong
+                                            adidas</a></li>
+                                </ul>
                             </div>
-                            <button type="submit" class="search-bar__search-btn btn btn--primary"><i class="fas fa-search"></i></button>
+                            <button type="submit" class="search-bar__search-btn btn btn--primary"><i
+                                    class="fas fa-search"></i></button>
                         </div>
                         <ul class="header-with-search__nav-link">
                             <li class="nav-link__item"><a href="">Áo khoác</a></li>
@@ -108,8 +117,8 @@
                             <i class="fas fa-shopping-cart"></i>
                         </div>
                         <div class="cart__empty">
-                            <img src="" alt="" class="cart__empty-img">
-                            <p class="cart__empty-description"></p>
+                            <img src="./assets/img/empty_cart.jpg" alt="" class="cart__empty-img">
+                            <p class="cart__empty-description">Chưa có sản phẩm</p>
                         </div>
                     </div>
                 </div>
@@ -258,7 +267,6 @@
             closeModalBtn.addEventListener('click', closeModal)
 
         function switchAuthModal() {
-
             if (registerModal.classList.contains('open-flex')) {
                 var isAnimated = loginBody.classList.contains('grow-animated');
                 if (isAnimated)
