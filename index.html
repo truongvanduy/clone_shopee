@@ -88,7 +88,7 @@
                     <div class="header-with-search__search">
                         <div class="header-with-search__search-bar">
                             <div class="search-bar__main">
-                                <input type="search" name="" id="" placeholder="Freeship trọn đời">
+                                <input type="search" name="" id="" placeholder="Freeship trọn đời" tabindex="1">
                                 <ul class="search-history">
                                     <li class="search-history__item"><a
                                             href="https://shopee.vn/search?keyword=c%E1%BA%A7y%20b%E1%BA%A3y%20m%C3%B3n"
@@ -128,11 +128,15 @@
                     <div class="header-with-search__cart">
                         <div class="cart__container">
                             <i class="fas fa-shopping-cart"></i>
+                            <span class="cart__qty">23</span>
+
+                            <!-- Empty cart: add cart__list--empty -->
+                            <div class="modal-hover cart__list cart__list--empty">
+                                <img src="./assets/img/empty-cart.png" alt="" class="cart__list--empty-img">
+                                <p class="cart__list--empty-description">Chưa có sản phẩm</p>
+                            </div>
                         </div>
-                        <div class="modal-hover cart__list cart__list--empty">
-                            <img src="./assets/img/empty-cart.png" alt="" class="cart__list--empty-img">
-                            <p class="cart__list--empty-description">Chưa có sản phẩm</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
