@@ -136,43 +136,15 @@
 /* Header notification */
 
 .notif {
-    position: absolute;
-    z-index: 1;
-    display: none;
     top: 120%;
     right: 0;
-    width: 400px;
-    border: 1px solid #eee;
-    border-radius: 2px;
+    
     flex-direction: column;
     align-items: stretch;
-    background-color: #fff;
     color: var(--text-color);
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.02rem;
-    transform-origin: calc(100% - var(--arrow-space)) top;
-    animation: grow ease 0.3s;
-    will-change: opacity, transform;
-}
-
-.notif::before {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    border-color: transparent transparent var(--white-color) transparent;
-    border-width: var(--border-height) var(--border-width);
-    right: calc(var(--arrow-space) - var(--border-width));
-    top: -30px;
-}
-
-.notif::after {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 20px;
-    top: -20px;
-    right: 0;
 }
 
 .navbar-list__item:hover .notif {
@@ -365,21 +337,13 @@ button.search-bar__search-btn {
     cursor: pointer;
 }
 
-.cart__empty {
+.cart__list--empty {
     position: absolute;
     top: 100%;
     right: calc(50% - var(--border-width));
     width: 400px;
     min-height: 250px;
-    background-color: #fff;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    border: 1px solid #eee;
-    transform-origin: calc(100% - var(--arrow-space)) top;
-    animation: grow ease 0.3s;
-    will-change: opacity, transform;
-
-    display: none;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -387,36 +351,15 @@ button.search-bar__search-btn {
     user-select: none;
 }
 
-.header-with-search__cart:hover .cart__empty {
+.header-with-search__cart:hover .cart__list--empty {
     display: flex;
 }
 
-.cart__empty::before {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    border-color: transparent transparent var(--white-color) transparent;
-    border-width: var(--border-height) var(--border-width);
-    right: calc(var(--arrow-space) - var(--border-width));
-    top: -32px;
-}
-
-.cart__empty::after {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 20px;
-    top: -20px;
-    right: 0;
-    cursor: pointer;
-}
-
-
-.cart__empty-img {
+.cart__list--empty-img {
     width: 100px;
 }
 
-.cart__empty-description {
+.cart__list--empty-description {
     color: var(--text-color);
     text-transform: capitalize;
     font-size: 1.4rem;

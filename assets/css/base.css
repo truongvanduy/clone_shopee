@@ -73,6 +73,44 @@ html {
     border-radius: 6px;
 }
 
+/* Modal hover */
+
+.modal-hover  {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 400px;
+    min-height: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    border: 1px solid #eee;
+    transform-origin: calc(100% - var(--arrow-space)) top;
+    animation: grow ease 0.3s;
+    will-change: opacity, transform;
+    cursor: default;
+}
+
+.modal-hover::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    border-width: var(--border-height) var(--border-width);
+    right: calc(var(--arrow-space) - var(--border-width));
+    top: -30px;
+}
+
+.modal-hover::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    top: -20px;
+    right: 0;
+    cursor: pointer;
+}
+
 /* Button */
 
 .btn {
