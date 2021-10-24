@@ -99,6 +99,7 @@ html {
     border-width: var(--border-height) var(--border-width);
     right: calc(var(--arrow-space) - var(--border-width));
     top: -30px;
+    cursor: pointer;
 }
 
 .modal-hover::after {
