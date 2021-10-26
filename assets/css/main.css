@@ -1,5 +1,4 @@
 .header {
-    --header-height: 120px;
     height: var(--header-height);
     background-image: linear-gradient(0, #ff6634, #f53d2d);
 }
@@ -73,11 +72,11 @@
 .navbar-list__icon-link {
     font-size: 1.6rem;
     color: #fff;
-    margin: 8px;
+    margin-left: 8px;
 }
 
 .navbar-list__icon-link + .navbar-list__icon-link {
-    margin-left: 0px;
+    margin-left: 6px;
 }
 
 /* QR code */
@@ -349,7 +348,7 @@ button.search-bar__search-btn {
     padding: 2px 4px;
     font-size: 1.4rem;
     line-height: 1.4rem;
-    border-radius: 50%;
+    border-radius: 45%;
     border: 3px solid #ee4d2d;
     color: var(--primary-color);
     background-color: var(--white-color);
@@ -515,6 +514,46 @@ button.search-bar__search-btn {
     margin: 12px;
     width: 120px;
 }
+
+/* App container */
+
+.app__container {
+    background-color: #f5f5f5;
+}
+
+.category {
+    background-color: var(--white-color);
+    border-radius: 2px;
+    padding: 0 20px 20px;
+}
+
+.store {
+
+}
+
+.category__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 20px 0px 20px;
+}
+
+.category__menu-icon {
+    padding-right: 4px;
+}
+
+.category-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category-item {
+
+}
+
+.category-item__link {
+    text-decoration: none;
+}
+
 
 /* Authenication form */
 
