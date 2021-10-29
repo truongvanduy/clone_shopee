@@ -149,6 +149,8 @@ html {
     align-items: center;
 }
 
+/* Button */
+
 .btn.btn--primary {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -156,6 +158,12 @@ html {
 
 .btn.social-btn {
     color: var(--white-color);
+}
+
+.btn.btn--disable {
+    opacity: 0.8;
+    color: #ccc;
+    cursor: default;
 }
 
 /* Animation */
