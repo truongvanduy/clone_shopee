@@ -36,23 +36,30 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 /* Test */
 
 .grid__col-2 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: calc(100%/6);
 }
 
 .grid__col-10 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: calc(100%/1.2);
 }
+
+.grid__col-2-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(100%/5);
+}
+
 
 .disappear {
     display: none !important;
