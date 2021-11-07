@@ -1,0 +1,109 @@
+.footer {
+  background-color: #fbfbfb;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.2rem;
+}
+
+.footer .grid__col-2-10 {
+  margin: 40px 0 20px 0;
+}
+
+.footer__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer__item {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.footer__item + .footer__item {
+  margin-top: 12px;
+}
+.footer__item-link {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer__item-link:hover {
+  color: var(--primary-color);
+}
+
+.footer__item-link i {
+  font-size: 1.6rem;
+  margin-right: 8px;
+  color: #666 !important;
+}
+
+.co-logo {
+}
+
+.transaction-logo {
+  background-image: url(../img/transaction.jpg);
+  padding-top: 38%;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.co-logo__img {
+  width: 70%;
+}
+.footer-download {
+  display: flex;
+  height: 86px;
+}
+.footer-download__qr {
+  display: block;
+  height: 100%;
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.footer-download__qr-img {
+  height: 100%;
+}
+.footer-download-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-download-app__link {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  cursor: pointer;
+}
+.footer-download-app__img {
+  width: 100%;
+}
+
+.footer__right{
+ position: relative;
+ padding: 40px;
+}
+
+.footer__right::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  top: 0;
+  left: 0;
+}
+.footer__right-text{
+  margin: 0;
+  text-align: center;
+  font-size: 1.4rem;
+}

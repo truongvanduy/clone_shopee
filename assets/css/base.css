@@ -13,6 +13,7 @@
 
 * {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -160,6 +161,11 @@ html {
 
 .btn.btn--primary {
     background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--secondary {
+    background-color: #d0011b;
     color: var(--white-color);
 }
 
